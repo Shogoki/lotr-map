@@ -80,7 +80,7 @@ function getLocName(date: string): string {
 	else
 		return ""
 }
-let includePath: boolean = false;
+let includePath: boolean = true;
 let dateIndex = 0 
 $: currentLocationName = getLocName(availableDates[dateIndex])
 
