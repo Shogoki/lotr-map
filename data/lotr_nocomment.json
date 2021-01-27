@@ -1,0 +1,817 @@
+{
+   "dates":{
+      "3018-04-12":{
+         "characters":{
+            "Gandalf":"Hobitton"
+         },
+         "event":"Gandalf reaches Hobitton"
+      },
+      "3018-06-20":{
+         "event":"Sauron attacks Osgiliath. About the same time Thranduil is attacked, and Gollum escapes.",
+         "characters":{
+            "Gollum":"Mirkwood"
+         }
+      },
+      "3018-06-22":{
+         "event":"Mid-Years-Day: Gandalf meets Radagast",
+         "characters":{
+            "Gandalf":"Mirkwood??",
+            "Radagast":"Mirkwood??"
+         }
+      },
+      "3018-07-04":{
+         "event":"Boromir sets out from Minas Tirith.",
+         "characters":{
+            "Boromir":"Minas Tirith"
+         }
+      },
+      "3018-07-04":{
+         "event":"Gandalf imprisoned in Orthanc.",
+         "characters":{
+            "Gandalf":"Isengard"
+         }
+      },
+      "3018-08-00":{
+         "event":"All trace of Gollum is lost. It is thought that at about this time, being hunted both by the Elves and Sauron's servants, he took refuge in Moria; but when he had at last discovered the way to the West-gate he could not get out",
+         "characters":{
+            "Gollum":"Moria"
+         }
+      },
+      "3018-09-18":{
+         "event":"Gandalf escapes Orthanc, Black riders cross Fords of Isen",
+         "characters":{
+            "Gandalf":"Isengard",
+            "BlackRiders9":"Ford of Isen"
+         }
+      },
+      "3018-09-19":{
+         "event":"Gandalf comes to Edoras as a beggar, and is refused admittance.",
+         "characters":{
+            "Gandalf":"Edoras"
+         }
+      },
+      "3018-09-20":{
+         "event":"Gandalf gains entrance to Edoras. Theoden commands him to go: 'Take any horse, only be gone ere tomorrow is old!'",
+         "characters":{
+            "Gandalf":"Edoras",
+            "Theoden":"Edoras"
+         }
+      },
+      "3018-09-21":{
+         "event":"Gandalf meets Shadowfax, but the horse will not allow him to come near. He follows Shadowfax far over the fields.",
+         "characters":{
+            "Gandalf":"Fields of Rohan"
+         }
+      },
+      "3018-09-22":{
+         "event":"The Black Riders reach Sarn Ford at evening; they drive off the guard of Rangers. Gandalf overtakes Shadowfax.",
+         "characters":{
+            "Gandalf":"Fields of Rohan",
+            "BlackRiders9":"Sarn Ford"
+         }
+      },
+      "3018-09-23":{
+         "event":"Four Riders enter the Shire before dawn. The others pursue the Rangers eastward, and then return to watch the Greenway. A Black Rider comes to Hobbiton at nightfall. Frodo leaves Bag End. Gandalf having tamed Shadowfax rides from Rohan.",
+         "characters":{
+            "Gandalf":"Fields of Rohan",
+            "BlackRiders4":"Hobbiton",
+            "Frodo":"Hobbiton"
+         }
+      },
+      "3018-09-24":{
+         "event":"Gandalf crosses the Isen.",
+         "characters":{
+            "Gandalf":"Ford of Isen"
+         }
+      },
+      "3018-09-26":{
+         "event":"The Old Forest. Frodo comes to Bombadil.",
+         "characters":{
+            "Frodo":"Bombadils House",
+            "Merry":"Bombadils House",
+            "Pippin":"Bombadils House",
+            "Sam":"Bombadils House"
+         }
+      },
+      "3018-09-27":{
+         "event":"Gandalf crosses Greyflood. Second night with Bombadil.",
+         "characters":{
+            "Gandalf":"Greyflood",
+            "Frodo":"Bombadils House",
+            "Merry":"Bombadils House",
+            "Pippin":"Bombadils House",
+            "Sam":"Bombadils House"
+         }
+      },
+      "3018-09-28":{
+         "event":"The Hobbits captured by a Barrow-wight. Gandalf reaches Sarn Ford.",
+         "characters":{
+            "Gandalf":"Sarn Ford",
+            "Frodo":"Barrow Downs",
+            "Merry":"Barrow Downs",
+            "Pippin":"Barrow Downs",
+            "Sam":"Barrow Downs"
+         }
+      },
+      "3018-09-29":{
+         "event":"Frodo reaches Bree at night. Gandalf visits the Gaffer.",
+         "characters":{
+            "Gandalf":"Hobbiton",
+            "Frodo":"Bree",
+            "Merry":"Bree",
+            "Pippin":"Bree",
+            "Sam":"Bree",
+            "Aragorn":"Bree"
+         }
+      },
+      "3018-09-30":{
+         "event":"Crickhollow and the Inn at Bree are raided in the early hours. Frodo leaves Bree. Gandalf comes to Crickhollow, and reaches Bree at night",
+         "characters":{
+            "Gandalf":[
+               "Crickhollow",
+               "Bree"
+            ],
+            "Frodo":"Bree-Weathertop",
+            "Merry":"Bree-Weathertop",
+            "Pippin":"Bree-Weathertop",
+            "Sam":"Bree-Weathertop",
+            "Aragorn":"Bree-Weathertop"
+         }
+   
+   	},
+   "3018-10-01":{
+      "event":"Gandalf leaves Bree.",
+      "characters":{
+         "Gandalf":"Bree-Weathertop",
+         "Frodo":"Bree-Weathertop",
+         "Merry":"Bree-Weathertop",
+         "Pippin":"Bree-Weathertop",
+         "Sam":"Bree-Weathertop",
+         "Aragorn":"Bree-Weathertop"
+      }
+   },
+   "3018-10-03":{
+      "event":"He (Gandalf) is attacked at night on Weathertop.",
+      "characters":{
+         "Gandalf":"Weathertop",
+         "BlackRiders":"Weathertop",
+         "Frodo":"Bree-Weathertop",
+         "Merry":"Bree-Weathertop",
+         "Pippin":"Bree-Weathertop",
+         "Sam":"Bree-Weathertop",
+         "Aragorn":"Bree-Weathertop"
+      }
+   },
+   "3018-10-06":{
+      "event":"The camp under Weathertop attacked at night Frodo wounded.",
+      "characters":{
+         "Gandalf":"Weathertop-Rivendell",
+         "Frodo":"Weathertop",
+         "Merry":"Weathertop",
+         "Pippin":"Weathertop",
+         "Sam":"Weathertop",
+         "Aragorn":"Weathertop"
+      }
+   },
+   "3018-10-09":{
+      "event":"Glorfindel leaves Rivendell.",
+      "characters":{
+         "Glorfindel":"Rivendel"
+      }
+   },
+   "3018-10-11":{
+      "event":"He (Glorfindel) drives the Riders off the Bridge of Mitheithel.",
+      "characters":{
+         "Glorfindel":"Bridge of Mitheithel",
+         "BlackRiders":"Bridge of Mitheithel"
+      }
+   },
+   "3018-10-13":{
+      "event":"Frodo crosses the Bridge.",
+      "characters":{
+         "Frodo":"Bridge of Mitheithel",
+         "Merry":"Bridge of Mitheithel",
+         "Pippin":"Bridge of Mitheithel",
+         "Sam":"Bridge of Mitheithel",
+         "Aragorn":"Bridge of Mitheithel"
+      }
+   },
+   "3018-10-18":{
+      "event":"Glorfindel finds Frodo at dusk. Gandalf reaches Rivendell.",
+      "characters":{
+         "Gandalf":"Rivendell",
+         "Glorfindel":"XXX",
+         "Frodo":"XXX",
+         "Merry":"XXX",
+         "Pippin":"XXX",
+         "Sam":"XXX",
+         "Aragorn":"XXX"
+      }
+   },
+   "3018-10-20":{
+      "event":"Escape across the Ford of Bruinen.",
+      "characters":{
+         "Glorfindel":"XXX",
+         "Frodo":"Ford of Bruinen",
+         "BlackRiders9":"Ford of Bruinen",
+         "Merry":"XXX",
+         "Pippin":"XXX",
+         "Sam":"XXX",
+         "Aragorn":"XXX"
+      }
+   },
+   "3018-10-24":{
+      "event":"Frodo recovers and wakes. Boromir arrives in Rivendell at night",
+      "characters":{
+         "Glorfindel":"Rivendell",
+         "Frodo":"Rivendell",
+         "Merry":"Rivendell",
+         "Pippin":"Rivendell",
+         "Sam":"Rivendell",
+         "Aragorn":"Rivendell",
+         "Boromir":"Rivendell"
+      }
+   },
+   "3018-10-25":{
+      "event":"Council of Elrond",
+      "characters":{
+         "Glorfindel":"Rivendell",
+         "Frodo":"Rivendell",
+         "Merry":"Rivendell",
+         "Pippin":"Rivendell",
+         "Sam":"Rivendell",
+         "Aragorn":"Rivendell",
+         "Boromir":"Rivendell",
+         "Gandalf":"Rivendell",
+         "Legolas":"Rivendell",
+         "Gimli":"Rivendell",
+         "Gloin":"Rivendell",
+         "Elrond":"Rivendell"
+      }
+   },
+   "3018-12-25":{
+      "event":"The Company of the Ring leaves Rivendell at dusk.",
+      "characters":{
+         "Frodo":"Rivendell",
+         "Merry":"Rivendell",
+         "Pippin":"Rivendell",
+         "Sam":"Rivendell",
+         "Aragorn":"Rivendell",
+         "Boromir":"Rivendell",
+         "Gandalf":"Rivendell",
+         "Legolas":"Rivendell",
+         "Gimli":"Rivendell"
+      }
+   },
+   "3019-01-08":{
+      "event":"The Company reach Hollin.",
+      "characters":{
+         "Frodo":"Hollin",
+         "Merry":"Hollin",
+         "Pippin":"Hollin",
+         "Sam":"Hollin",
+         "Aragorn":"Hollin",
+         "Boromir":"Hollin",
+         "Gandalf":"Hollin",
+         "Legolas":"Hollin",
+         "Gimli":"Hollin"
+      }
+   },
+   "3019-01-11":{
+      "event":"Snow on Caradhras.",
+      "characters":{
+         "Frodo":"Caradhras",
+         "Merry":"Caradhras",
+         "Pippin":"Caradhras",
+         "Sam":"Caradhras",
+         "Aragorn":"Caradhras",
+         "Boromir":"Caradhras",
+         "Gandalf":"Caradhras",
+         "Legolas":"Caradhras",
+         "Gimli":"Caradhras"
+      }
+   },
+   "3019-01-12":{
+      "event":"Snow on Caradhras.",
+      "characters":{
+         "Frodo":"Caradhras",
+         "Merry":"Caradhras",
+         "Pippin":"Caradhras",
+         "Sam":"Caradhras",
+         "Aragorn":"Caradhras",
+         "Boromir":"Caradhras",
+         "Gandalf":"Caradhras",
+         "Legolas":"Caradhras",
+         "Gimli":"Caradhras"
+      }
+   },
+   "3019-01-13":{
+      "event":"Attack by Wolves in the early hours. The Company reaches the West-gate of Moria at nightfall. Gollum begins to trail the Ring-bearer.",
+      "characters":{
+         "Frodo":"West-gate of Moria",
+         "Merry":"West-gate of Moria",
+         "Pippin":"West-gate of Moria",
+         "Sam":"West-gate of Moria",
+         "Aragorn":"West-gate of Moria",
+         "Boromir":"West-gate of Moria",
+         "Gandalf":"West-gate of Moria",
+         "Legolas":"West-gate of Moria",
+         "Gimli":"West-gate of Moria",
+         "Gollum":"West-gate of Moria"
+      }
+   },
+   "3019-01-14":{
+      "event":"Night in Hall Twenty-one.",
+      "characters":{
+         "Frodo":"Hall 21 of Moria",
+         "Merry":"Hall 21 of Moria",
+         "Pippin":"Hall 21 of Moria",
+         "Sam":"Hall 21 of Moria",
+         "Aragorn":"Hall 21 of Moria",
+         "Boromir":"Hall 21 of Moria",
+         "Gandalf":"Hall 21 of Moria",
+         "Legolas":"Hall 21 of Moria",
+         "Gimli":"Hall 21 of Moria",
+         "Gollum":"Hall 21 of Moria"
+      }
+   },
+   "3019-01-15":{
+      "event":"The Bridge of Khazad-dûm, and fall of Gandalf. The Company reaches Nimrodel late at night.",
+      "characters":{
+         "Frodo":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Merry":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Pippin":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Sam":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Aragorn":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Boromir":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Gandalf":"Bridge of Khazad-dûm",
+         "Legolas":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Gimli":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ],
+         "Gollum":[
+            "Bridge of Khazad-dûm",
+            "Nimrodel"
+         ]
+      }
+   },
+   "3019-01-17":{
+      "event":"The Company comes to Caras Galadhon at evening.",
+      "characters":{
+         "Frodo":"Caras Galadhon",
+         "Merry":"Caras Galadhon",
+         "Pippin":"Caras Galadhon",
+         "Sam":"Caras Galadhon",
+         "Aragorn":"Caras Galadhon",
+         "Boromir":"Caras Galadhon",
+         "Legolas":"Caras Galadhon",
+         "Gimli":"Caras Galadhon"
+      }
+   },
+   "3019-01-23":{
+      "event":"Gandalf pursues the Balrog to the peak of Zirak-zigil.",
+      "characters":{
+         "Gandalf":"Zirak-zigil"
+      }
+   },
+   "3019-01-23":{
+      "event":"He (Gandalf) casts down the Balrog, and passes away. His body lies on the peak.",
+      "characters":{
+         "Gandalf":"Zirak-zigil"
+      }
+   },
+   "3019-02-15":{
+      "event":"The Mirror of Galadriel. Gandalf returns to life, and lies in a trance.",
+      "characters":{
+         "Gandalf":"lies in trance",
+         "Frodo":"Caras Galadhon",
+         "Merry":"Caras Galadhon",
+         "Pippin":"Caras Galadhon",
+         "Sam":"Caras Galadhon",
+         "Aragorn":"Caras Galadhon",
+         "Boromir":"Caras Galadhon",
+         "Legolas":"Caras Galadhon",
+         "Gimli":"Caras Galadhon"
+      }
+   },
+   "3019-02-16":{
+      "event":"Farewell to Lorien. Gollum in hiding on the west bank observes the departure.",
+      "characters":{
+         "Gandalf":"--",
+         "Frodo":"Caras Galadhon",
+         "Merry":"Caras Galadhon",
+         "Pippin":"Caras Galadhon",
+         "Sam":"Caras Galadhon",
+         "Aragorn":"Caras Galadhon",
+         "Boromir":"Caras Galadhon",
+         "Legolas":"Caras Galadhon",
+         "Gimli":"Caras Galadhon",
+         "Gollum":"west-bank Lorien"
+      }
+   },
+   "3019-02-17":{
+      "event":"Gwaihir bears Gandalf to Lorien.",
+      "characters":{
+         "Gandalf":"Lorien"
+      }
+   },
+   "3019-02-23":{
+      "event":"The boats are attacked at night near Sarn Gebir.",
+      "characters":{
+         "Frodo":"Sarn Gebir",
+         "Merry":"Sarn Gebir",
+         "Pippin":"Sarn Gebir",
+         "Sam":"Sarn Gebir",
+         "Aragorn":"Sarn Gebir",
+         "Boromir":"Sarn Gebir",
+         "Legolas":"Sarn Gebir",
+         "Gimli":"Sarn Gebir"
+      }
+   },
+   "3019-02-25":{
+      "event":"The Company pass the Argonath and camp at Parth Galen. First Battle of the Fords of Isen; Theodred son of Theoden slain.",
+      "characters":{
+         "Frodo":"Parth Galen",
+         "Merry":"Parth Galen",
+         "Pippin":"Parth Galen",
+         "Sam":"Parth Galen",
+         "Aragorn":"Parth Galen",
+         "Boromir":"Parth Galen",
+         "Legolas":"Parth Galen",
+         "Gimli":"Parth Galen",
+         "Thoedred":"Fords of Isen"
+      }
+   },
+   "3019-02-26":{
+      "event":"Breaking of the Fellowship. Death of Boromir; his horn is heard in Minas Tirith. Meriadoc and Peregrin captured. Frodo and Samwise enter the eastern Emyn Muil. Aragorn sets out in pursuit of the Orcs at evening. eomer hears of the descent of the Orc-band from the Emyn Muil.",
+      "characters":{
+         "Frodo":"eastern Emyn Muil",
+         "Sam":"eastern Emyn Muil",
+         "Merry":"Parth Galen-Fangorn",
+         "Pippin":"Parth Galen-Fangorn",
+         "Aragorn":"Parth Galen-Fangorn",
+         "Boromir":"Parth Galen",
+         "Gimli":"Parth Galen-Fangorn"
+      }
+   },
+   "3019-02-27":{
+      "event":"Aragorn reaches the west-cliff at sunrise. eomer against Theoden's orders sets out from Eastfold about midnight to pursue the Orcs.",
+      "characters":{
+         "Aragorn":"west-cliff",
+         "Legolas":"west-cliff",
+         "Gimli":"west-cliff",
+         "Eomer":"Eastfold"
+      }
+   },
+   "3019-02-28":{
+      "event":"Eomer overtakes the Orcs just outside Fangorn Forest.",
+      "characters":{
+         "Merry":"Fangorn (outside)",
+         "Pippin":"Fangorn (outside)",
+         "Eomer":"Fangorn (outside)"
+      }
+   },
+   "3019-02-29":{
+      "event":"Meriadoc and Pippin escape and meet Treebeard. The Rohirrim attack at sunrise and destroy the Orcs. Frodo descends from the Emyn Muil and meets Gollum. Faramir sees the funeral boat of Boromir.",
+      "characters":{
+         "Merry":"Fangorn",
+         "Pippin":"Fangorn",
+         "Treebeard":"Fangorn",
+         "Eomer":"Fangorn (outside)",
+         "Frodo":"Emyn Muil",
+         "Sam":"Emyn Muil",
+         "Gollum":"Emyn Muil",
+         "Faramir":"Minas Tirith"
+      }
+   },
+   "3019-02-30":{
+      "event":"Entmoot begins. eomer returning to Edoras meets Aragorn.",
+      "characters":{
+         "Merry":"Fangorn",
+         "Pippin":"Fangorn",
+         "Treebeard":"Fangorn",
+         "Eomer":"Fields of Rohan",
+         "Aragorn":"Fields of Rohan",
+         "Legolas":"Fields of Rohan",
+         "Gimli":"Fields of Rohan"
+      }
+   },
+   "3019-03-01":{
+      "event":"Frodo begins the passage of the Dead Marshes at dawn. Entmoot continues. Aragorn meets Gandalf the White. They set out for Edoras. Faramir leaves Minas Tirith on an errand to Ithilien.",
+      "characters":{
+         "Merry":"Fangorn",
+         "Pippin":"Fangorn",
+         "Treebeard":"Fangorn",
+         "Eomer":"Edoras",
+         "Aragorn":"Fangorn",
+         "Legolas":"Fangorn",
+         "Gimli":"Fangorn",
+         "Gandalf":"Fangorn",
+         "Faramir":"Minas Tirith-Ithilien",
+         "Frodo":"Dead Marshes",
+         "Sam":"Dead Marshes",
+         "Gollum":"Dead Marshes"
+      }
+   },
+   "3019-03-02":{
+      "event":"Frodo comes to the end of the Marshes. Gandalf comes to Edoras and heals Theoden. The Rohirrim ride west against Saruman. Second Battle of Fords of Isen. Erkenbrand defeated. Entmoot ends in after-noon. The Ents march on Isengard and reach it at night.",
+      "characters":{
+         "Merry":"Fangorn-Isengard",
+         "Pippin":"Fangorn-Isengard",
+         "Treebeard":"Fangorn-Isengard",
+         "Eomer":"Edoras-Isengard",
+         "Aragorn":"Edoras",
+         "Legolas":"Edoras",
+         "Gimli":"Edoras",
+         "Gandalf":"Edoras",
+         "Frodo":"Dead Marshes",
+         "Sam":"Dead Marshes",
+         "Gollum":"Dead Marshes",
+         "Theoden":"Edoras"
+      }
+   },
+   "3019-03-03":{
+      "event":"Theoden retreats to Helm's Deep. Battle of the Horn-burg begins. Ents complete the destruction of Isengard.",
+      "characters":{
+         "Merry":"Isengard",
+         "Pippin":"Isengard",
+         "Treebeard":"Isengard",
+         "Aragorn":" Helm's Deep",
+         "Legolas":" Helm's Deep",
+         "Gimli":" Helm's Deep",
+         "Theoden":"Helm's Deep"
+      }
+   },
+   "3019-03-04":{
+      "event":"Theoden and Gandalf set out from Helm's Deep for Isengard. Frodo reaches the slag-mounds on the edge of the Desolation of the Morannon.",
+      "characters":{
+         "Theoden":"Helm's Deep-Isengard",
+         "Gandalf":"Helm's Deep-Isengard",
+         "Frodo":"slag-mounds",
+         "Sam":"slag-mounds",
+         "Gollum":"slag-mounds"
+      }
+   },
+   "3019-03-05":{
+      "event":"Theoden reaches Isengard at noon. Parley with Saruman in Orthanc. Winged Nazgûl passes over the camp at Dol Baran. Gandalf sets out with Peregrin for Minas Tirith. Frodo hides in sight of the Morannon, and leaves at dusk.",
+      "characters":{
+         "Theoden":[
+            "Isengard",
+            "Dol Baran"
+         ],
+         "Gandalf":[
+            "Isengard",
+            "Dol Baran",
+            "Dol Baran-Minas Tirith"
+         ],
+         "Merry":[
+            "Isengard",
+            "Dol Baran"
+         ],
+         "Pippin":[
+            "Isengard",
+            "Dol Baran",
+            "Dol Baran-Minas Tirith"
+         ],
+         "Frodo":"Morannon",
+         "Sam":"Morannon",
+         "Gollum":"Morannon",
+         "WingedNazgul":"Dol Baran"
+      }
+   },
+   "3019-03-06":{
+      "event":"Aragorn overtaken by the DUnedain in the early hours. Theoden sets out from the Hornburg for Harrowdale. Aragorn sets out later.",
+      "characters":{
+         "Theoden":"Helms Deep-Harrowdale"
+      }
+   },
+   "3019-03-07":{
+      "event":"Frodo taken by Faramir to Henneth Amùn. Aragorn comes to Dunharrow at nightfall.",
+      "characters":{
+         "Aragorn":"Dunharrow",
+         "Legolas":"Dunharrow",
+         "Gimli":"Dunharrow",
+         "Frodo":"Henneth Amùn",
+         "Sam":"Henneth Amùn",
+         "Gollum":"Henneth Amùn",
+         "Faramir":"Henneth Amùn"
+      }
+   },
+   "3019-03-08":{
+      "event":"Aragorn takes the 'Paths of the Dead' at daybreak; he reaches Erech at midnight. Frodo leaves Henneth Amùn",
+      "characters":{
+         "Aragorn":[
+            "Paths of the Dead",
+            "Erech"
+         ],
+         "Legolas":[
+            "Paths of the Dead",
+            "Erech"
+         ],
+         "Gimli":[
+            "Paths of the Dead",
+            "Erech"
+         ],
+         "Frodo":"Henneth Amùn",
+         "Sam":"Henneth Amùn",
+         "Gollum":"Henneth Amùn",
+         "Faramir":"Henneth Amùn"
+      }
+   },
+   "3019-03-09":{
+      "event":"Gandalf reaches Minas Tirith. Faramir leaves Henneth Amùn. Aragorn sets out from Erech and comes to Calembel. At dusk Frodo reaches the Morgul-road. Theoden comes to Dunharrow. Darkness begins to flow out of Mordor.",
+      "characters":{
+         "Gandalf":"Minas Tirith",
+         "Pippin":"Minas Tirith",
+         "Theoden":"Dunharrow",
+         "Aragorn":"Calembel",
+         "Legolas":"Calembel",
+         "Gimli":"Calembel",
+         "Frodo":"Morgul-road",
+         "Sam":"Morgul-road",
+         "Gollum":"Morgul-road",
+         "Faramir":"Henneth Amùn"
+      }
+   },
+   "3019-03-10":{
+      "event":"The Dawnless Day. The Muster of Rohan: the Rohirrim ride from Harrowdale. Faramir rescued by Gandalf outside the gates of the City. Aragorn crosses Ringlo. An army from the Morannon takes Cair Andros and passes into Anorien. Frodo passes the Cross-roads, and sees the Morgul-host set forth.",
+      "characters":{
+         "Gandalf":"Minas Tirith",
+         "Aragorn":"Ringlo",
+         "Legolas":"Ringlo",
+         "Gimli":"Ringlo",
+         "Frodo":"Cross-roads",
+         "Sam":"Cross-roads",
+         "Gollum":"Cross-roads",
+         "Faramir":"Minas Tirith"
+      }
+   },
+   "3019-03-11":{
+      "event":"Gollum visits Shelob, but seeing Frodo asleep nearly repents. Denethor sends Faramir to Osgiliath. Aragorn reaches Linhir and crosses into Lebennin. Eastern Rohan is invaded from the north. First assault on Lorien.",
+      "characters":{
+         "Aragorn":"Lebennin",
+         "Legolas":"Lebennin",
+         "Gimli":"Lebennin",
+         "Frodo":"Cirith-Ungol",
+         "Sam":"Cirith-Ungol",
+         "Gollum":"Cirith-Ungol",
+         "Faramir":"Osgiliath"
+      }
+   },
+   "3019-03-12":{
+      "event":"Gollum leads Frodo into Shelob's lair. Faramir retreats to the Causeway Forts. Theoden camps under Minrimmon. Aragorn drives the enemy towards Pelargir. The Ents defeat the invaders of Rohan.",
+      "characters":{
+         "Theoden":"Min-Rimmon",
+         "Aragorn":"Pelargir",
+         "Legolas":"Pelargir",
+         "Gimli":"Pelargir",
+         "Frodo":"Shelob's lair",
+         "Gollum":"Shelob's lair",
+         "Faramir":"Causeway Forts"
+      }
+   },
+   "3019-03-13":{
+      "event":"Frodo captured by the Orcs of Cirith Ungol. The Pelennor is over-run. Faramir is wounded. Aragorn reaches Pelargir and captures the fleet. Theoden in DrUadan Forest.",
+      "characters":{
+         "Theoden":"Druadan forrest",
+         "Aragorn":"Pelargir",
+         "Legolas":"Pelargir",
+         "Gimli":"Pelargir",
+         "Frodo":"Cirith-Ungol"
+      }
+   },
+   "3019-03-14":{
+      "event":"Samwise finds Frodo in the Tower. Minas Tirith is besieged. The Rohirrim led by the Wild Men come to the Grey Wood.",
+      "characters":{
+         "Theoden":"Grey Wood",
+         "Aragorn":"Pelargir",
+         "Legolas":"Pelargir",
+         "Gimli":"Pelargir",
+         "Frodo":"Cirith-Ungol",
+         "Sam":"Cirith-Ungol"
+      }
+   },
+   "3019-03-15":{
+      "event":"In the early hours the Witch-king breaks the Gates of the City. Denethor burns himself on a pyre. The horns of the Rohirrim are heard at cockcrow. Battle of the Pelennor. Theoden is slain. Aragorn raises the standard of Arwen. Frodo and Samwise escape and begin their journey north along the Morgai. Battle under the trees in Mirkwood; Thranduil repels the forces of Dol Guldur. Second assault on Lorien.",
+      "characters":{
+         "Theoden":"Minas Tirith",
+         "Aragorn":"Minas Tirith",
+         "Legolas":"Minas Tirith",
+         "Gimli":"Minas Tirith",
+         "Frodo":"Morgai",
+         "Sam":"Morgai"
+      }
+   },
+   "3019-03-16":{
+      "event":"Debate of the commanders. Frodo from the Morgai looks out over the camp to Mount Doom.",
+      "characters":{
+         "Frodo":"Morgai-Mount Doom",
+         "Sam":"Morgai-Mount Doom"
+      }
+   },
+   "3019-03-17":{
+      "event":"Battle of Dale. King Brand and King Dain Ironfoot fall. Many Dwarves and Men take refuge in Erebor and are besieged. Shagrat brings Frodo's cloak, mail-shirt, and sword to Barad-dùr.",
+      "characters":{
+         
+      }
+   },
+   "3019-03-18":{
+      "event":"The Host of the West marches from Minas Tirith. Frodo comes in sight of the Isenmouthe; he is over-taken by Orcs on the road from Durthang to Udùn.",
+      "characters":{
+         "Theoden":"Minas Tirith-Morgul Vale",
+         "Aragorn":"Minas Tirith-Morgul Vale",
+         "Legolas":"Minas Tirith-Morgul Vale",
+         "Gimli":"Minas Tirith-Morgul Vale",
+         "Gandalf":"Minas Tirith-Morgul Vale",
+         "Merry":"Minas Tirith-Morgul Vale",
+         "Pippin":"Minas Tirith-Morgul Vale",
+         "Frodo":"Isenmouthe",
+         "Sam":"Isenmouthe"
+      }
+   },
+   "3019-03-19":{
+      "event":" The Host comes to Morgul-vale. Frodo and Samwise escape and begin their journey along the road to the Barad-dûr.",
+      "characters":{
+         "Theoden":"Morgul Vale",
+         "Aragorn":"Morgul Vale",
+         "Legolas":"Morgul Vale",
+         "Gimli":"Morgul Vale",
+         "Gandalf":"Morgul Vale",
+         "Merry":"Morgul Vale",
+         "Pippin":"Morgul Vale",
+         "Frodo":"road to Barad-dur",
+         "Sam":"road to Barad-dur"
+      }
+   },
+   "3019-03-22":{
+      "event":"The dreadful nightfall. Frodo and Samwise leave the road and turn south to Mount Doom. Third assault on Lorien.",
+      "characters":{
+         "Frodo":"Barad-dur-Mount Doom",
+         "Sam":"Barad-dur-Mount Doom"
+      }
+   },
+   "3019-03-23":{
+      "event":"The Host passes out of Ithilien. Aragorn dismisses the faint-hearted. Frodo and Samwise cast away their arms and gear.",
+      "characters":{
+         "Theoden":"Ithilien",
+         "Aragorn":"Ithilien",
+         "Legolas":"Ithilien",
+         "Gimli":"Ithilien",
+         "Gandalf":"Ithilien",
+         "Merry":"Ithilien",
+         "Pippin":"Ithilien"
+      }
+   },
+   "3019-03-24":{
+      "event":"Frodo and Samwise make their last journey to the feet of Mount Doom. The Host camps in the Desolation of the Morannon.",
+      "characters":{
+         "Theoden":"Morannon",
+         "Aragorn":"Morannon",
+         "Legolas":"Morannon",
+         "Gimli":"Morannon",
+         "Gandalf":"Morannon",
+         "Merry":"Morannon",
+         "Pippin":"Morannon",
+         "Frodo":"Mount Doom",
+         "Sam":"Mount Doom"
+      }
+   },
+   "3019-03-25":{
+      "event":"The Host is surrounded on the Slag-hills. Frodo and Samwise reach the Sammath Naur. Gollum seizes the Ring and falls in the Cracks of Doom. Downfall of Barad-d&ucirc;r and passing of Sauron.",
+      "characters":{
+         "Theoden":"Slag-hills",
+         "Aragorn":"Slag-hills",
+         "Legolas":"Slag-hills",
+         "Gimli":"Slag-hills",
+         "Gandalf":"Slag-hills",
+         "Merry":"Slag-hills",
+         "Pippin":"Slag-hills",
+         "Frodo":"Sammath Naur",
+         "Sam":"Sammath Naur",
+         "Gollum":"Sammath Naur"
+      }
+   }
+}
+}
