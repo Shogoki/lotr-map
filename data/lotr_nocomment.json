@@ -12,7 +12,7 @@
             "Gollum":"Mirkwood"
          }
       },
-      "3018-06-22":{
+      "3018-06-32":{
          "event":"Mid-Years-Day: Gandalf meets Radagast",
          "characters":{
             "Gandalf":"Mirkwood??",
@@ -25,7 +25,7 @@
             "Boromir":"Minas Tirith"
          }
       },
-      "3018-07-04":{
+      "3018-07-10":{
          "event":"Gandalf imprisoned in Orthanc.",
          "characters":{
             "Gandalf":"Isengard"
@@ -130,42 +130,23 @@
             "Gandalf":[
                "Crickhollow",
                "Bree"
-            ],
-            "Frodo":"Bree-Weathertop",
-            "Merry":"Bree-Weathertop",
-            "Pippin":"Bree-Weathertop",
-            "Sam":"Bree-Weathertop",
-            "Aragorn":"Bree-Weathertop"
-         }
+            ]
    
    	},
    "3018-10-01":{
       "event":"Gandalf leaves Bree.",
-      "characters":{
-         "Gandalf":"Bree-Weathertop",
-         "Frodo":"Bree-Weathertop",
-         "Merry":"Bree-Weathertop",
-         "Pippin":"Bree-Weathertop",
-         "Sam":"Bree-Weathertop",
-         "Aragorn":"Bree-Weathertop"
-      }
+      "characters":{  }
    },
    "3018-10-03":{
       "event":"He (Gandalf) is attacked at night on Weathertop.",
       "characters":{
          "Gandalf":"Weathertop",
-         "BlackRiders":"Weathertop",
-         "Frodo":"Bree-Weathertop",
-         "Merry":"Bree-Weathertop",
-         "Pippin":"Bree-Weathertop",
-         "Sam":"Bree-Weathertop",
-         "Aragorn":"Bree-Weathertop"
+         "BlackRiders":"Weathertop"
       }
    },
    "3018-10-06":{
       "event":"The camp under Weathertop attacked at night Frodo wounded.",
       "characters":{
-         "Gandalf":"Weathertop-Rivendell",
          "Frodo":"Weathertop",
          "Merry":"Weathertop",
          "Pippin":"Weathertop",
@@ -176,7 +157,7 @@
    "3018-10-09":{
       "event":"Glorfindel leaves Rivendell.",
       "characters":{
-         "Glorfindel":"Rivendel"
+         "Glorfindel":"Rivendell"
       }
    },
    "3018-10-11":{
@@ -390,7 +371,7 @@
          "Gimli":"Caras Galadhon"
       }
    },
-   "3019-01-23":{
+   "3019-01-22":{
       "event":"Gandalf pursues the Balrog to the peak of Zirak-zigil.",
       "characters":{
          "Gandalf":"Zirak-zigil"
@@ -529,7 +510,7 @@
          "Legolas":"Fangorn",
          "Gimli":"Fangorn",
          "Gandalf":"Fangorn",
-         "Faramir":"Minas Tirith-Ithilien",
+         "Faramir":"Minas Tirith",
          "Frodo":"Dead Marshes",
          "Sam":"Dead Marshes",
          "Gollum":"Dead Marshes"
@@ -538,10 +519,7 @@
    "3019-03-02":{
       "event":"Frodo comes to the end of the Marshes. Gandalf comes to Edoras and heals Theoden. The Rohirrim ride west against Saruman. Second Battle of Fords of Isen. Erkenbrand defeated. Entmoot ends in after-noon. The Ents march on Isengard and reach it at night.",
       "characters":{
-         "Merry":"Fangorn-Isengard",
-         "Pippin":"Fangorn-Isengard",
-         "Treebeard":"Fangorn-Isengard",
-         "Eomer":"Edoras-Isengard",
+         "Eomer":"Edoras",
          "Aragorn":"Edoras",
          "Legolas":"Edoras",
          "Gimli":"Edoras",
@@ -567,8 +545,6 @@
    "3019-03-04":{
       "event":"Theoden and Gandalf set out from Helm's Deep for Isengard. Frodo reaches the slag-mounds on the edge of the Desolation of the Morannon.",
       "characters":{
-         "Theoden":"Helm's Deep-Isengard",
-         "Gandalf":"Helm's Deep-Isengard",
          "Frodo":"slag-mounds",
          "Sam":"slag-mounds",
          "Gollum":"slag-mounds"
@@ -604,7 +580,7 @@
    "3019-03-06":{
       "event":"Aragorn overtaken by the DUnedain in the early hours. Theoden sets out from the Hornburg for Harrowdale. Aragorn sets out later.",
       "characters":{
-         "Theoden":"Helms Deep-Harrowdale"
+         "Theoden":"Helm´s Deep"
       }
    },
    "3019-03-07":{
@@ -613,10 +589,10 @@
          "Aragorn":"Dunharrow",
          "Legolas":"Dunharrow",
          "Gimli":"Dunharrow",
-         "Frodo":"Henneth Amùn",
-         "Sam":"Henneth Amùn",
-         "Gollum":"Henneth Amùn",
-         "Faramir":"Henneth Amùn"
+         "Frodo":"Henneth Amun",
+         "Sam":"Henneth Amun",
+         "Gollum":"Henneth Amun",
+         "Faramir":"Henneth Amun"
       }
    },
    "3019-03-08":{
@@ -634,14 +610,14 @@
             "Paths of the Dead",
             "Erech"
          ],
-         "Frodo":"Henneth Amùn",
-         "Sam":"Henneth Amùn",
-         "Gollum":"Henneth Amùn",
-         "Faramir":"Henneth Amùn"
+         "Frodo":"Henneth Amun",
+         "Sam":"Henneth Amun",
+         "Gollum":"Henneth Amun",
+         "Faramir":"Henneth Amun"
       }
    },
    "3019-03-09":{
-      "event":"Gandalf reaches Minas Tirith. Faramir leaves Henneth Amùn. Aragorn sets out from Erech and comes to Calembel. At dusk Frodo reaches the Morgul-road. Theoden comes to Dunharrow. Darkness begins to flow out of Mordor.",
+      "event":"Gandalf reaches Minas Tirith. Faramir leaves Henneth Amun. Aragorn sets out from Erech and comes to Calembel. At dusk Frodo reaches the Morgul-road. Theoden comes to Dunharrow. Darkness begins to flow out of Mordor.",
       "characters":{
          "Gandalf":"Minas Tirith",
          "Pippin":"Minas Tirith",
@@ -652,7 +628,7 @@
          "Frodo":"Morgul-road",
          "Sam":"Morgul-road",
          "Gollum":"Morgul-road",
-         "Faramir":"Henneth Amùn"
+         "Faramir":"Henneth Amun"
       }
    },
    "3019-03-10":{
@@ -740,13 +716,6 @@
    "3019-03-18":{
       "event":"The Host of the West marches from Minas Tirith. Frodo comes in sight of the Isenmouthe; he is over-taken by Orcs on the road from Durthang to Udùn.",
       "characters":{
-         "Theoden":"Minas Tirith-Morgul Vale",
-         "Aragorn":"Minas Tirith-Morgul Vale",
-         "Legolas":"Minas Tirith-Morgul Vale",
-         "Gimli":"Minas Tirith-Morgul Vale",
-         "Gandalf":"Minas Tirith-Morgul Vale",
-         "Merry":"Minas Tirith-Morgul Vale",
-         "Pippin":"Minas Tirith-Morgul Vale",
          "Frodo":"Isenmouthe",
          "Sam":"Isenmouthe"
       }
@@ -768,8 +737,6 @@
    "3019-03-22":{
       "event":"The dreadful nightfall. Frodo and Samwise leave the road and turn south to Mount Doom. Third assault on Lorien.",
       "characters":{
-         "Frodo":"Barad-dur-Mount Doom",
-         "Sam":"Barad-dur-Mount Doom"
       }
    },
    "3019-03-23":{
