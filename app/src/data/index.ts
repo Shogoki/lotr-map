@@ -46,6 +46,20 @@ export async function getBaseData(): Promise<Base> {
     return  ret
 }
 
+export async function getAllDateKeys(): Promise<DateKey[]> {
+    const base = await getBaseData();
+    return Array.from(base.dates.keys())
+}
+
+export async function getCharacterNames(): Promise<string[]> {
+    const base = await getBaseData();
+    const chars = new Set<string>()
+    Array.from(base.dates.keys()).forEach((date) => {
+        Array.from(base.dates.get(date).characters.keys()).forEach(char => chars.add(char))
+    })
+    return Array.from(chars)
+}
+
 export async function getLocationSetByCharacter(character: string) :Promise<LocationSet> {
     const base = await getBaseData()
     let ret: LocationSet = new Map()

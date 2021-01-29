@@ -7,12 +7,15 @@
     export let availableDates //TODO: later i will not export and bind this anymore, as i display all dates?
     export let dateIndex = 0;
     let characterData:Map<CharacterName, LocationSet> = new Map()
-    let drawBase;
-    getLocationSetByCharacter(character).then((data: LocationSet) => {
-	characterData = characterData.set(character, data);
-	console.log("CharData:", characterData);
-	availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : [undefined]
-    })
+	let drawBase;
+	function initCharacterData() {
+		getLocationSetByCharacter(character).then((data: LocationSet) => {
+		characterData = characterData.set(character, data);
+		console.log("CharData:", characterData);
+		availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : [undefined]
+		})
+	}
+    $: character, initCharacterData()
 
     function drawCircle(x: number, y: number) {
 	console.log("drawnow")

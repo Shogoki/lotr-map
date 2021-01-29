@@ -1,5 +1,6 @@
 <script lang="ts">
 import CharacterLayer from "./CharacterLayer.svelte"
+import {getCharacterNames} from "./data"
 let svg;
 let showCoords: boolean = false;
 function clicked (e){
@@ -22,7 +23,8 @@ function clicked (e){
 }
 
 let character = "Frodo"
-const availableChars = ["Frodo"]
+let availableChars = ["Frodo"]
+getCharacterNames().then(names => availableChars = names)
 let availableDates = [undefined]
 let includePath: boolean = true;
 let dateIndex: number = 0;
@@ -33,7 +35,7 @@ let dateIndex: number = 0;
 </div>
 	<div id="controls">
 		<label for="char">Character:</label>
-		<select>
+		<select bind:value={character}>
 			{#each availableChars as char}
 			<option value="{char}">{char}</option>
 			{/each}
