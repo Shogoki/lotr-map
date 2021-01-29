@@ -1,34 +1,34 @@
 <script lang="ts">
     import {getLocationSetByCharacter, getPlaceData, getPlaceLocation} from "./data"
     import type {LocationSet, CharacterName, DateKey, PlaceLocation, PlaceName} from "./data"
+import { ShireDate } from "./data/util";
     export let character ="Frodo"
     export let includePath: boolean = true;
-
-    export let availableDates //TODO: later i will not export and bind this anymore, as i display all dates?
-    export let dateIndex = 0;
+	export let selectedDate = ""
+    // export let dateIndex = 0;
     let characterData:Map<CharacterName, LocationSet> = new Map()
 	let drawBase;
 	function initCharacterData() {
 		getLocationSetByCharacter(character).then((data: LocationSet) => {
 		characterData = characterData.set(character, data);
 		console.log("CharData:", characterData);
-		availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : [undefined]
+		
 		})
 	}
     $: character, initCharacterData()
 
     function drawCircle(x: number, y: number) {
-	console.log("drawnow")
-	var rect = document.createElementNS("http://www.w3.org/2000/svg", 'circle')
-	rect.setAttributeNS(null, 'width', 100)
-	rect.setAttributeNS(null, 'cx', x.toString())
-	rect.setAttributeNS(null, 'cy', y.toString())
-	// rect.setAttributeNS(null, 'cx', 855)
-	// rect.setAttributeNS(null, 'cy', 741)
+		console.log("drawnow")
+		var rect = document.createElementNS("http://www.w3.org/2000/svg", 'circle')
+		rect.setAttributeNS(null, 'width', 100)
+		rect.setAttributeNS(null, 'cx', x.toString())
+		rect.setAttributeNS(null, 'cy', y.toString())
+		// rect.setAttributeNS(null, 'cx', 855)
+		// rect.setAttributeNS(null, 'cy', 741)
 
-	rect.setAttributeNS(null, 'r', "6")
-	rect.setAttributeNS(null, 'fill', 'red')
-	drawBase.appendChild(rect)
+		rect.setAttributeNS(null, 'r', "6")
+		rect.setAttributeNS(null, 'fill', 'red')
+		drawBase.appendChild(rect)
 
 }
 function drawLine(loc1: PlaceLocation, loc2: PlaceLocation, withDots=true) {
@@ -64,25 +64,46 @@ function cleanDrawings() {
 	});
 }
 
-function getLocName(date: string): PlaceName {
+function lookupPlaceName(date: string): PlaceName {
 	if(date)
 		return characterData.get(character).get(date)
 	else
 		return ""
 }
-$: currentLocationName = getLocName(availableDates[dateIndex])
+function getLocName(date:string): PlaceName {
+	const locs = getAllPreviousLocationDates(date)
+	console.log("reqtrieved following Locs for Date", date)
+	return locs.length > 0 ? lookupPlaceName(locs[0]) : ""
+}
+$: currentLocationName = getLocName(selectedDate)
+
+function getAllPreviousLocationDates(date: string, includeCurrent=true): string[] {
+	if(!date)
+		return []
+	const availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : [undefined]
+	const shireDate = new ShireDate(date)
+	const locs = availableDates.filter(
+		item => shireDate.compareTo(new ShireDate(item)) >= 0
+	).sort(
+		(a,b) => (new ShireDate(a)).compareTo(new ShireDate(b))
+		)
+	return includeCurrent ? locs : locs.splice(1)
+}
 
 $: getPlaceLocation(currentLocationName).then(loc => {
 	if(loc) {
+		console.log("Clean Drawings")
 		cleanDrawings()
-		if(includePath && dateIndex > 0) {
+		if(includePath) {
 			let lastLoc = currentLocationName;
-			//We neeed to draw a path between all previous ones.
-			availableDates.slice(0,dateIndex).reverse().forEach(date => {
-				const tmp = getLocName(date)
+		
+			getAllPreviousLocationDates(selectedDate).forEach(date => {
+				const tmp = lookupPlaceName(date)
+				console.log("Draw Line from", lastLoc, "to", tmp)
 				drawLineFromPlaces(lastLoc,tmp);
 				lastLoc = tmp;
 			});
+			//We neeed to draw a path between all previous ones.
 		}
 		else {
 			drawCircle(loc.x,loc.y)

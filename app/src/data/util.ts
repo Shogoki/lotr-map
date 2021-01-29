@@ -2,7 +2,7 @@ export class ShireDate {
     private year: number;
     private month: number;
     private day: number|SpecialDay;
-    private isSpecialDay: boolean; 
+    private isSpecialDay: boolean = false; 
     private _specialDays = [
         "1Lithe",
         "2Lithe",
@@ -17,11 +17,11 @@ export class ShireDate {
             this.isSpecialDay = true;
         }
         if (parts.length != 3 ) {
-            throw new Error("Invalid Date Format")
+            throw new Error(`Invalid Date Format! Given ${dateStr}`)
         }
         this.year = parseInt(parts[0]);
         if(isNaN(this.year))
-            throw new Error("Invalid Year Format")
+            throw new Error(`Invalid Year Format ! Given ${parts[0]}`)
         if(this.isSpecialDay)
         {
             this.day = parts[1] as SpecialDay;
@@ -30,13 +30,15 @@ export class ShireDate {
             this.month = parseInt(parts[1]);
             this.day = parseInt(parts[2])
             if(isNaN(this.month))
-                throw new Error("Invalid Month Format")
+                throw new Error(`Invalid Month Format! Given ${parts[1]}`)
             if(isNaN(this.day))
-                throw new Error("Invalid Day Format")
+                throw new Error(`Invalid Day Format! Given ${parts[2]}`)
         }
     }
 
     public compareTo(other: ShireDate) {
+        //comparing date 
+
         if (this.year <  other.year) 
             return -1
         else if(this.year > other.year)

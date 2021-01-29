@@ -1,6 +1,6 @@
 <script lang="ts">
 import CharacterLayer from "./CharacterLayer.svelte"
-import {getCharacterNames} from "./data"
+import {getCharacterNames, getAllDateKeys} from "./data"
 let svg;
 let showCoords: boolean = false;
 function clicked (e){
@@ -22,10 +22,30 @@ function clicked (e){
 	}
 }
 
-let character = "Frodo"
-let availableChars = ["Frodo"]
+let character = "Frodo" // defaulting to Frodo as he has all places assigned :-)
+let availableChars = [character] 
+const colors = [
+	"red",
+	"green",
+	"blue",
+	"purple",
+	"orange",
+	"yellow"
+]
+let displayedCharacters = []
+function addCharacter() {
+	if(!displayedCharacters.includes(character)) {
+		if (displayedCharacters.length >= colors.length)
+			alert(`there is only a max of ${colors.length} characters allowed`)
+		displayedCharacters = [...displayedCharacters, character]
+	}
+	else {
+		alert("Character is already displayed")
+	}
+}
 getCharacterNames().then(names => availableChars = names)
 let availableDates = [undefined]
+getAllDateKeys().then(dates => availableDates = dates)
 let includePath: boolean = true;
 let dateIndex: number = 0;
 </script>
@@ -40,7 +60,13 @@ let dateIndex: number = 0;
 			<option value="{char}">{char}</option>
 			{/each}
 		</select>
-		<label for="loc">Latest Location:</label><span id="loc" name="loc">TODO</span>
+		<button on:click={addCharacter}>Display Character Route </button>
+		<div id="displayed-chars">
+			{#each displayedCharacters as char}
+			<div>{char}</div>
+			{/each}
+		</div>
+		<!-- <label for="loc">Latest Location:</label><span id="loc" name="loc">TODO</span> -->
 		{#if availableDates.length > 0 }
 		<label for="date-index">Date: {availableDates[dateIndex]}</label>
 			<input type="range" id="date-index" name="date-index"
@@ -57,7 +83,7 @@ let dateIndex: number = 0;
 	<svg id="map" viewBox="0 0 3200 2400" version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" on:click={clicked}  bind:this={svg}>
 		 <image x="0" y="0" href="/img/mapome-slim.svg" width="100%" height="100%" />
-		 <CharacterLayer {character} {includePath} bind:availableDates={availableDates} {dateIndex} />
+		 <CharacterLayer {character} {includePath}  selectedDate={availableDates[dateIndex]} />
 </svg>
 
 	<!-- <object data="/img/mapome-slim.svg" type="image/svg+xml"  > -->
