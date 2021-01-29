@@ -88,4 +88,4 @@ $: getPlaceLocation(currentLocationName).then(loc => {
 })
 </script>
 
-<g id="drawing"bind:this={drawBase}></g>
+<g id="path-{character.toLowerCase()}" bind:this={drawBase}></g>
