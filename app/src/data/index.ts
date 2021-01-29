@@ -6,7 +6,7 @@ export interface PlaceLocation {
 }
 
 export type DateKey = string;
-export type PlaceName = string;
+export type PlaceName = string|Array<string>;
 export type CharacterName = string
 
 export type PlaceData =  Map<PlaceName, PlaceLocation>;
@@ -51,8 +51,13 @@ export async function getLocationSetByCharacter(character: string) :Promise<Loca
     let ret: LocationSet = new Map()
     Array.from(base.dates.keys()).forEach((date) => {
         let entry = base.dates.get(date)
-        if(entry.characters.has(character))
-            ret.set(date,entry.characters.get(character))
+        if(entry.characters.has(character)){
+            const loc = entry.characters.get(character)
+            if(Array.isArray(loc))
+                loc.forEach(item=> ret.set(date,item) )
+            else
+                ret.set(date,loc)
+        }
     })
         
     return ret;
