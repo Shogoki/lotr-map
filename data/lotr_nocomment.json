@@ -2,9 +2,9 @@
    "dates":{
       "3018-04-12":{
          "characters":{
-            "Gandalf":"Hobitton"
+            "Gandalf":"Hobbiton"
          },
-         "event":"Gandalf reaches Hobitton"
+         "event":"Gandalf reaches Hobbiton"
       },
       "3018-06-20":{
          "event":"Sauron attacks Osgiliath. About the same time Thranduil is attacked, and Gollum escapes.",
@@ -41,7 +41,7 @@
          "event":"Gandalf escapes Orthanc, Black riders cross Fords of Isen",
          "characters":{
             "Gandalf":"Isengard",
-            "BlackRiders9":"Ford of Isen"
+            "BlackRiders9":"Fords of Isen"
          }
       },
       "3018-09-19":{
@@ -81,7 +81,7 @@
       "3018-09-24":{
          "event":"Gandalf crosses the Isen.",
          "characters":{
-            "Gandalf":"Ford of Isen"
+            "Gandalf":"Fords of Isen"
          }
       },
       "3018-09-26":{
@@ -318,43 +318,43 @@
       }
    },
    "3019-01-15":{
-      "event":"The Bridge of Khazad-dûm, and fall of Gandalf. The Company reaches Nimrodel late at night.",
+      "event":"The Bridge of Khazad-dum, and fall of Gandalf. The Company reaches Nimrodel late at night.",
       "characters":{
          "Frodo":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Merry":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Pippin":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Sam":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Aragorn":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Boromir":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
-         "Gandalf":"Bridge of Khazad-dûm",
+         "Gandalf":"Bridge of Khazad-dum",
          "Legolas":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Gimli":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ],
          "Gollum":[
-            "Bridge of Khazad-dûm",
+            "Bridge of Khazad-dum",
             "Nimrodel"
          ]
       }
@@ -450,12 +450,7 @@
       "event":"Breaking of the Fellowship. Death of Boromir; his horn is heard in Minas Tirith. Meriadoc and Peregrin captured. Frodo and Samwise enter the eastern Emyn Muil. Aragorn sets out in pursuit of the Orcs at evening. eomer hears of the descent of the Orc-band from the Emyn Muil.",
       "characters":{
          "Frodo":"eastern Emyn Muil",
-         "Sam":"eastern Emyn Muil",
-         "Merry":"Parth Galen-Fangorn",
-         "Pippin":"Parth Galen-Fangorn",
-         "Aragorn":"Parth Galen-Fangorn",
-         "Boromir":"Parth Galen",
-         "Gimli":"Parth Galen-Fangorn"
+         "Sam":"eastern Emyn Muil"
       }
    },
    "3019-02-27":{
@@ -537,9 +532,9 @@
          "Merry":"Isengard",
          "Pippin":"Isengard",
          "Treebeard":"Isengard",
-         "Aragorn":" Helm's Deep",
-         "Legolas":" Helm's Deep",
-         "Gimli":" Helm's Deep",
+         "Aragorn":"Helm's Deep",
+         "Legolas":"Helm's Deep",
+         "Gimli":"Helm's Deep",
          "Theoden":"Helm's Deep"
       }
    },
@@ -552,7 +547,7 @@
       }
    },
    "3019-03-05":{
-      "event":"Theoden reaches Isengard at noon. Parley with Saruman in Orthanc. Winged Nazgûl passes over the camp at Dol Baran. Gandalf sets out with Peregrin for Minas Tirith. Frodo hides in sight of the Morannon, and leaves at dusk.",
+      "event":"Theoden reaches Isengard at noon. Parley with Saruman in Orthanc. Winged Nazgul passes over the camp at Dol Baran. Gandalf sets out with Peregrin for Minas Tirith. Frodo hides in sight of the Morannon, and leaves at dusk.",
       "characters":{
          "Theoden":[
             "Isengard",
@@ -560,8 +555,7 @@
          ],
          "Gandalf":[
             "Isengard",
-            "Dol Baran",
-            "Dol Baran-Minas Tirith"
+            "Dol Baran"
          ],
          "Merry":[
             "Isengard",
@@ -569,8 +563,7 @@
          ],
          "Pippin":[
             "Isengard",
-            "Dol Baran",
-            "Dol Baran-Minas Tirith"
+            "Dol Baran"
          ],
          "Frodo":"Morannon",
          "Sam":"Morannon",
@@ -581,7 +574,7 @@
    "3019-03-06":{
       "event":"Aragorn overtaken by the DUnedain in the early hours. Theoden sets out from the Hornburg for Harrowdale. Aragorn sets out later.",
       "characters":{
-         "Theoden":"Helm´s Deep"
+         "Theoden":"Helm's Deep"
       }
    },
    "3019-03-07":{
@@ -704,8 +697,6 @@
    "3019-03-16":{
       "event":"Debate of the commanders. Frodo from the Morgai looks out over the camp to Mount Doom.",
       "characters":{
-         "Frodo":"Morgai-Mount Doom",
-         "Sam":"Morgai-Mount Doom"
       }
    },
    "3019-03-17":{
@@ -722,7 +713,7 @@
       }
    },
    "3019-03-19":{
-      "event":" The Host comes to Morgul-vale. Frodo and Samwise escape and begin their journey along the road to the Barad-dûr.",
+      "event":" The Host comes to Morgul-vale. Frodo and Samwise escape and begin their journey along the road to the Barad-dur.",
       "characters":{
          "Theoden":"Morgul Vale",
          "Aragorn":"Morgul Vale",

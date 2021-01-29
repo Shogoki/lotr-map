@@ -1,35 +1,278 @@
 {
-    "Hobbiton": {"x": 855, "y":741},
-    "Shelob's lair":{"x": 2144.5, "y":1643},
-    "Bombadils House": {"x": 973, "y":705},
-    "Mount Doom": {"x": 2267.8, "y":1607.2},
-    "Morgai": {"x": 2167.8, "y":1575},
-    "Sammath Naur": {"x": 2267.8, "y":1587.9},
-    "Caradhras": {"x": 1542.8, "y":866},
-    "Weathertop": {"x": 1207.1, "y":626.8},
-    "Henneth Amun": {"x": 2073, "y":1643.5},
-    "Rivendell": {"x": 1548.2, "y":636.2},
-    "Caras Galadhon": {"x": 1701, "y":1012},
-    "Cirith-Ungol": {"x": 2125,"y":1661.2},
-    "Sarn Gebir": {"x": 1885.7, "y":1423.6},
-    "Parth Galen": {"x": 1892.8, "y":1467},
-    "Hollin": {"x": 1482.142822265625, "y":874.047607421875},
-    "eastern Emyn Muil":{"x": 1896.4, "y":1413.6},
-    "Cross-roads": {"x": 2105.4, "y":1677.3},
-    "Dead Marshes": {"x": 2030.4, "y":1490},
-    "Barrow Downs": {"x": 994.6, "y":746.9},
-    "Bree": {"x": 1041.1, "y":677.3},
-    "Isenmouthe": {"x": 2259, "y":1549.4},
-    "Bridge of Mitheithel": {"x": 1375, "y":633.9},
-    "slag-mounds": {"x": 2121.4, "y":1435.7},
-    "Morannon": {"x": 2219.6, "y":1442.6},
-    "Ford of Bruinen": {"x": 1516, "y":657.1},
-    "Hall 21 of Moria": {"x": 1516, "y":926.8},
-    "road to Barad-dur": {"x": 2319.6, "y":1580.9},
-    "Morgul-road": {"x": 2087.8, "y":1680.7},
-    "West-gate of Moria": {"x": 1496.4, "y":929.5},
-    "Bridge of Khazad-dum": {"x": 1548.2, "y":922.3},
-    "XXX": {"x":1426.8, "y":643.9},
-    "Emyn Muil": {"x": 1969.6, "y":1409.5},
-    "Nimrodel": {"x": 1608.9, "y":991.5}
+    "Hobbiton": {
+        "x": 823.21,
+        "y": 662.08
+    },
+    "Shelob's lair": {
+        "x": 2144.5,
+        "y": 1643
+    },
+    "Bombadils House": {
+        "x": 967.86,
+        "y": 679.64
+    },
+    "Mount Doom": {
+        "x": 2267.8,
+        "y": 1607.2
+    },
+    "Morgai": {
+        "x": 2167.8,
+        "y": 1575
+    },
+    "Sammath Naur": {
+        "x": 2267.8,
+        "y": 1587.9
+    },
+    "Caradhras": {
+        "x": 1542.8,
+        "y": 866
+    },
+    "Weathertop": {
+        "x": 1207.1,
+        "y": 626.8
+    },
+    "Henneth Amun": {
+        "x": 2073,
+        "y": 1643.5
+    },
+    "Rivendell": {
+        "x": 1548.2,
+        "y": 636.2
+    },
+    "Caras Galadhon": {
+        "x": 1701,
+        "y": 1012
+    },
+    "Cirith-Ungol": {
+        "x": 2125,
+        "y": 1661.2
+    },
+    "Sarn Gebir": {
+        "x": 1885.7,
+        "y": 1423.6
+    },
+    "Parth Galen": {
+        "x": 1892.8,
+        "y": 1467
+    },
+    "Hollin": {
+        "x": 1482.142822265625,
+        "y": 874.047607421875
+    },
+    "eastern Emyn Muil": {
+        "x": 1896.4,
+        "y": 1413.6
+    },
+    "Cross-roads": {
+        "x": 2105.4,
+        "y": 1677.3
+    },
+    "Dead Marshes": {
+        "x": 2030.4,
+        "y": 1490
+    },
+    "Barrow Downs": {
+        "x": 1005.36,
+        "y": 690.36
+    },
+    "Bree": {
+        "x": 1041.1,
+        "y": 677.3
+    },
+    "Isenmouthe": {
+        "x": 2259,
+        "y": 1549.4
+    },
+    "Bridge of Mitheithel": {
+        "x": 1375,
+        "y": 633.9
+    },
+    "slag-mounds": {
+        "x": 2121.4,
+        "y": 1435.7
+    },
+    "Morannon": {
+        "x": 2164.29,
+        "y": 1474.58
+    },
+    "Ford of Bruinen": {
+        "x": 1516,
+        "y": 657.1
+    },
+    "Hall 21 of Moria": {
+        "x": 1516,
+        "y": 926.8
+    },
+    "road to Barad-dur": {
+        "x": 2319.6,
+        "y": 1580.9
+    },
+    "Morgul-road": {
+        "x": 2087.8,
+        "y": 1680.7
+    },
+    "West-gate of Moria": {
+        "x": 1496.4,
+        "y": 929.5
+    },
+    "Bridge of Khazad-dum": {
+        "x": 1548.2,
+        "y": 922.3
+    },
+    "XXX": {
+        "x": 1426.8,
+        "y": 643.9
+    },
+    "Emyn Muil": {
+        "x": 1969.6,
+        "y": 1409.5
+    },
+    "Nimrodel": {
+        "x": 1608.9,
+        "y": 991.5
+    },
+    "Helm's Deep": {
+        "x": 1487.5,
+        "y": 1438.87
+    },
+    "Dol Baran": {
+        "x": 1432.14,
+        "y": 1330.48
+    },
+    "Min-Rimmon": {
+        "x": 0,
+        "y": 0
+    },
+    "Grey Wood": {
+        "x": 0,
+        "y": 0
+    },
+    "Crickhollow": {
+        "x": 915.18,
+        "y": 692.63
+    },
+    "Fords of Isen": {
+        "x": 1410.71,
+        "y": 1374.33
+    },
+    "Minas Tirith": {
+        "x": 2044.64,
+        "y": 1692.41
+    },
+    "Lorien": {
+        "x": 1660.71,
+        "y": 1018.3
+    },
+    "Ringlo": {
+        "x": 0,
+        "y": 0
+    },
+    "Calembel": {
+        "x": 0,
+        "y": 0
+    },
+    "Pelargir": {
+        "x": 0,
+        "y": 0
+    },
+    "Moria": {
+        "x": 1535.71,
+        "y": 916.67
+    },
+    "Zirak-zigil": {
+        "x": 0,
+        "y": 0
+    },
+    "Dunharrow": {
+        "x": 0,
+        "y": 0
+    },
+    "Osgiliath": {
+        "x": 2093.75,
+        "y": 1704.61
+    },
+    "Paths of the Dead": {
+        "x": 0,
+        "y": 0
+    },
+    "Fangorn": {
+        "x": 1562.5,
+        "y": 1226.93
+    },
+    "Isengard": {
+        "x": 1406.25,
+        "y": 1302.83
+    },
+    "Mirkwood": {
+        "x": 1915.18,
+        "y": 506.4
+    },
+    "Erech": {
+        "x": 1580.36,
+        "y": 1613.54
+    },
+    "--": {
+        "x": 0,
+        "y": 0
+    },
+    "Lebennin": {
+        "x": 0,
+        "y": 0
+    },
+    "Morgul Vale": {
+        "x": 0,
+        "y": 0
+    },
+    "Greyflood": {
+        "x": 0,
+        "y": 0
+    },
+    "Causeway Forts": {
+        "x": 0,
+        "y": 0
+    },
+    "Fields of Rohan": {
+        "x": 0,
+        "y": 0
+    },
+    "Ithilien": {
+        "x": 0,
+        "y": 0
+    },
+    "lies in trance": {
+        "x": 0,
+        "y": 0
+    },
+    "Druadan forrest": {
+        "x": 0,
+        "y": 0
+    },
+    "Sarn Ford": {
+        "x": 0,
+        "y": 0
+    },
+    "west-cliff": {
+        "x": 0,
+        "y": 0
+    },
+    "Edoras": {
+        "x": 1580.36,
+        "y": 1501.93
+    },
+    "Eastfold": {
+        "x": 0,
+        "y": 0
+    },
+    "west-bank Lorien": {
+        "x": 0,
+        "y": 0
+    },
+    "Fangorn (outside)": {
+        "x": 1504.46,
+        "y": 1292.11
+    },
+    "Slag-hills": {
+        "x": 0,
+        "y": 0
+    }
 }
