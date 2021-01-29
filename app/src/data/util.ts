@@ -12,7 +12,8 @@ export class ShireDate {
         "2Yule"
     ]
     public constructor(dateStr: string) {
-        const parts = dateStr.split("-");
+        
+        const parts = dateStr ? dateStr.split("-") : [];
         if(parts.length == 2 && this._specialDays.includes(parts[1])) {
             this.isSpecialDay = true;
         }

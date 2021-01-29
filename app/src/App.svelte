@@ -32,8 +32,11 @@ const colors = [
 	"orange",
 	"yellow"
 ]
+$: displayCharObjects = displayedCharacters.map((name, idx) => { return {name: name, color: colors[idx]}})
+
 let displayedCharacters = []
 function addCharacter() {
+
 	if(!displayedCharacters.includes(character)) {
 		if (displayedCharacters.length >= colors.length)
 			alert(`there is only a max of ${colors.length} characters allowed`)
@@ -62,8 +65,8 @@ let dateIndex: number = 0;
 		</select>
 		<button on:click={addCharacter}>Display Character Route </button>
 		<div id="displayed-chars">
-			{#each displayedCharacters as char}
-			<div>{char}</div>
+			{#each displayCharObjects as charObj}
+			<div style="color:{charObj.color}">{charObj.name}</div>
 			{/each}
 		</div>
 		<!-- <label for="loc">Latest Location:</label><span id="loc" name="loc">TODO</span> -->
@@ -83,7 +86,9 @@ let dateIndex: number = 0;
 	<svg id="map" viewBox="0 0 3200 2400" version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" on:click={clicked}  bind:this={svg}>
 		 <image x="0" y="0" href="/img/mapome-slim.svg" width="100%" height="100%" />
-		 <CharacterLayer {character} {includePath}  selectedDate={availableDates[dateIndex]} />
+		 {#each displayCharObjects as charObj	}
+		 	<CharacterLayer character={charObj.name} {includePath}  selectedDate={availableDates[dateIndex]} color={charObj.color}/>
+		 {/each}
 </svg>
 
 	<!-- <object data="/img/mapome-slim.svg" type="image/svg+xml"  > -->

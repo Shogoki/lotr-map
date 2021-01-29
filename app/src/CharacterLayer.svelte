@@ -5,14 +5,18 @@ import { ShireDate } from "./data/util";
     export let character ="Frodo"
     export let includePath: boolean = true;
 	export let selectedDate = ""
+	export let color = "red"
+
+	console.log(`DIsplay Path for ${character} at Date ${selectedDate} in Color ${color} (includepahts: ${includePath})`)
     // export let dateIndex = 0;
     let characterData:Map<CharacterName, LocationSet> = new Map()
 	let drawBase;
 	function initCharacterData() {
 		getLocationSetByCharacter(character).then((data: LocationSet) => {
 		characterData = characterData.set(character, data);
-		console.log("CharData:", characterData);
-		
+		const tmp = selectedDate;
+		selectedDate =""
+		selectedDate = tmp // Dirty hack, to directly draw, after retrieving data
 		})
 	}
     $: character, initCharacterData()
@@ -27,7 +31,7 @@ import { ShireDate } from "./data/util";
 		// rect.setAttributeNS(null, 'cy', 741)
 
 		rect.setAttributeNS(null, 'r', "6")
-		rect.setAttributeNS(null, 'fill', 'red')
+		rect.setAttributeNS(null, 'fill', color)
 		drawBase.appendChild(rect)
 
 }
@@ -38,7 +42,7 @@ function drawLine(loc1: PlaceLocation, loc2: PlaceLocation, withDots=true) {
 	line.setAttributeNS(null, 'y1', loc1.y.toString())
 	line.setAttributeNS(null, 'x2', loc2.x.toString())
 	line.setAttributeNS(null, 'y2', loc2.y.toString())
-	line.setAttributeNS(null, 'stroke', "red")
+	line.setAttributeNS(null, 'stroke', color)
 	line.setAttributeNS(null, 'stroke-width', "3")
 	// line.setAttributeNS(null, 'cx', 855)
 	// line.setAttributeNS(null, 'cy', 741)
@@ -71,17 +75,21 @@ function lookupPlaceName(date: string): PlaceName {
 		return ""
 }
 function getLocName(date:string): PlaceName {
+	console.log("Get Name for date", date)
 	const locs = getAllPreviousLocationDates(date)
-	console.log("reqtrieved following Locs for Date", date)
+	console.log("reqtrieved following Locs for Date", date, ":")
+	console.log(locs)
 	return locs.length > 0 ? lookupPlaceName(locs[0]) : ""
 }
 $: currentLocationName = getLocName(selectedDate)
 
 function getAllPreviousLocationDates(date: string, includeCurrent=true): string[] {
-	if(!date)
+	if(!date || date == "")
 		return []
-	const availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : [undefined]
+	const availableDates = characterData.has(character) ? Array.from(characterData.get(character).keys()) : []
+	console.log("COnverting date", date)
 	const shireDate = new ShireDate(date)
+	console.log("availabelDates", availableDates)
 	const locs = availableDates.filter(
 		item => shireDate.compareTo(new ShireDate(item)) >= 0
 	).sort(
@@ -92,14 +100,12 @@ function getAllPreviousLocationDates(date: string, includeCurrent=true): string[
 
 $: getPlaceLocation(currentLocationName).then(loc => {
 	if(loc) {
-		console.log("Clean Drawings")
 		cleanDrawings()
 		if(includePath) {
 			let lastLoc = currentLocationName;
 		
 			getAllPreviousLocationDates(selectedDate).forEach(date => {
 				const tmp = lookupPlaceName(date)
-				console.log("Draw Line from", lastLoc, "to", tmp)
 				drawLineFromPlaces(lastLoc,tmp);
 				lastLoc = tmp;
 			});
