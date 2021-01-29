@@ -81,6 +81,7 @@ function getLocName(date:string): PlaceName {
 	console.log(locs)
 	return locs.length > 0 ? lookupPlaceName(locs[0]) : ""
 }
+export let currentLocationName
 $: currentLocationName = getLocName(selectedDate)
 
 function getAllPreviousLocationDates(date: string, includeCurrent=true): string[] {

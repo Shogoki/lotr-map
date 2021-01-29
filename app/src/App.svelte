@@ -32,7 +32,7 @@ const colors = [
 	"orange",
 	"yellow"
 ]
-$: displayCharObjects = displayedCharacters.map((name, idx) => { return {name: name, color: colors[idx]}})
+$: displayCharObjects = displayedCharacters.map((name, idx) => { return {name: name, color: colors[idx], location: ""}})
 
 let displayedCharacters = []
 function addCharacter() {
@@ -65,20 +65,24 @@ let dateIndex: number = 0;
 		</select>
 		<button on:click={addCharacter}>Display Character Route </button>
 		<div id="displayed-chars">
-			{#each displayCharObjects as charObj}
-			<div style="color:{charObj.color}">{charObj.name}</div>
-			{/each}
+			{#if displayCharObjects.length > 0}
+				{#each displayCharObjects as charObj}
+				<div style="color:{charObj.color}">{charObj.name} </div>
+				{/each}
+			{:else}
+				Please add Character to Display.
+			{/if}
 		</div>
 		<!-- <label for="loc">Latest Location:</label><span id="loc" name="loc">TODO</span> -->
 		{#if availableDates.length > 0 }
 		<label for="date-index">Date: {availableDates[dateIndex]}</label>
 			<input type="range" id="date-index" name="date-index"
 			min="0" max="{availableDates.length -1}" bind:value={dateIndex} >
-				<label for="include-path">draw Path?</label>
-				<input type="checkbox" name="include-path" bind:checked={includePath}>
+				<label for="include-path">draw Path? <input type="checkbox" name="include-path" bind:checked={includePath} /></label>
+				<span></span>
 		{/if}
-		<label for="include-path">show Coordinates on Click</label>
-		<input type="checkbox" name="include-path" bind:checked={showCoords}>
+		<label for="sho-cords">show Coordinates on Click</label>
+		<input type="checkbox" name="chow-cords" bind:checked={showCoords}>
 	</div>
 </header>
 <main>
@@ -87,7 +91,7 @@ let dateIndex: number = 0;
 	 xmlns="http://www.w3.org/2000/svg" on:click={clicked}  bind:this={svg}>
 		 <image x="0" y="0" href="/img/mapome-slim.svg" width="100%" height="100%" />
 		 {#each displayCharObjects as charObj	}
-		 	<CharacterLayer character={charObj.name} {includePath}  selectedDate={availableDates[dateIndex]} color={charObj.color}/>
+		 	<CharacterLayer character={charObj.name} {includePath}  selectedDate={availableDates[dateIndex]} color={charObj.color} bind:currentLocationName={charObj.location}/>
 		 {/each}
 </svg>
 
