@@ -15,8 +15,8 @@
       "3018-06-32":{
          "event":"Mid-Years-Day: Gandalf meets Radagast",
          "characters":{
-            "Gandalf":"Mirkwood??",
-            "Radagast":"Mirkwood??"
+            "Gandalf":"South of Bree",
+            "Radagast":"South of Bree"
          }
       },
       "3018-07-04":{
@@ -41,7 +41,7 @@
          "event":"Gandalf escapes Orthanc, Black riders cross Fords of Isen",
          "characters":{
             "Gandalf":"Isengard",
-            "BlackRiders9":"Fords of Isen"
+            "BlackRiders":"Fords of Isen"
          }
       },
       "3018-09-19":{
@@ -60,21 +60,21 @@
       "3018-09-21":{
          "event":"Gandalf meets Shadowfax, but the horse will not allow him to come near. He follows Shadowfax far over the fields.",
          "characters":{
-            "Gandalf":"Fields of Rohan"
+            "Gandalf":"Fields of Rohan (following Shadowfax1)"
          }
       },
       "3018-09-22":{
          "event":"The Black Riders reach Sarn Ford at evening; they drive off the guard of Rangers. Gandalf overtakes Shadowfax.",
          "characters":{
-            "Gandalf":"Fields of Rohan",
-            "BlackRiders9":"Sarn Ford"
+            "Gandalf":"Fields of Rohan (following Shadowfax2)",
+            "BlackRiders":"Sarn Ford"
          }
       },
       "3018-09-23":{
          "event":"Four Riders enter the Shire before dawn. The others pursue the Rangers eastward, and then return to watch the Greenway. A Black Rider comes to Hobbiton at nightfall. Frodo leaves Bag End. Gandalf having tamed Shadowfax rides from Rohan.",
          "characters":{
-            "Gandalf":"Fields of Rohan",
-            "BlackRiders4":"Hobbiton",
+            "Gandalf":"Fields of Rohan (following Shadowfax3)",
+            "BlackRiders":"Hobbiton",
             "Frodo":"Hobbiton"
          }
       },
@@ -182,24 +182,24 @@
       "event":"Glorfindel finds Frodo at dusk. Gandalf reaches Rivendell.",
       "characters":{
          "Gandalf":"Rivendell",
-         "Glorfindel":"XXX",
-         "Frodo":"XXX",
-         "Merry":"XXX",
-         "Pippin":"XXX",
-         "Sam":"XXX",
-         "Aragorn":"XXX"
+         "Glorfindel":"Trollshaws",
+         "Frodo":"Trollshaws",
+         "Merry":"Trollshaws",
+         "Pippin":"Trollshaws",
+         "Sam":"Trollshaws",
+         "Aragorn":"Trollshaws"
       }
    },
    "3018-10-20":{
       "event":"Escape across the Ford of Bruinen.",
       "characters":{
-         "Glorfindel":"XXX",
+         "Glorfindel":"Trollshaws",
          "Frodo":"Ford of Bruinen",
-         "BlackRiders9":"Ford of Bruinen",
-         "Merry":"XXX",
-         "Pippin":"XXX",
-         "Sam":"XXX",
-         "Aragorn":"XXX"
+         "BlackRiders":"Ford of Bruinen",
+         "Merry":"Trollshaws",
+         "Pippin":"Trollshaws",
+         "Sam":"Trollshaws",
+         "Aragorn":"Trollshaws"
       }
    },
    "3018-10-24":{
@@ -401,7 +401,6 @@
    "3019-02-16":{
       "event":"Farewell to Lorien. Gollum in hiding on the west bank observes the departure.",
       "characters":{
-         "Gandalf":"--",
          "Frodo":"Caras Galadhon",
          "Merry":"Caras Galadhon",
          "Pippin":"Caras Galadhon",
@@ -456,9 +455,9 @@
    "3019-02-27":{
       "event":"Aragorn reaches the west-cliff at sunrise. eomer against Theoden's orders sets out from Eastfold about midnight to pursue the Orcs.",
       "characters":{
-         "Aragorn":"west-cliff",
-         "Legolas":"west-cliff",
-         "Gimli":"west-cliff",
+         "Aragorn":"Emyn Muil (west-cliff)",
+         "Legolas":"west-cliffEmyn Muil (west-cliff)",
+         "Gimli":"Emyn Muil (west-cliff)",
          "Eomer":"Eastfold"
       }
    },
@@ -690,13 +689,15 @@
          "Aragorn":"Minas Tirith",
          "Legolas":"Minas Tirith",
          "Gimli":"Minas Tirith",
-         "Frodo":"Morgai",
-         "Sam":"Morgai"
+         "Frodo":"Morgai (south)",
+         "Sam":"Morgai (south)"
       }
    },
    "3019-03-16":{
       "event":"Debate of the commanders. Frodo from the Morgai looks out over the camp to Mount Doom.",
       "characters":{
+         "Frodo":"Morgai (center)",
+         "Sam":"Morgai (center)"
       }
    },
    "3019-03-17":{
@@ -734,13 +735,13 @@
    "3019-03-23":{
       "event":"The Host passes out of Ithilien. Aragorn dismisses the faint-hearted. Frodo and Samwise cast away their arms and gear.",
       "characters":{
-         "Theoden":"Ithilien",
-         "Aragorn":"Ithilien",
-         "Legolas":"Ithilien",
-         "Gimli":"Ithilien",
-         "Gandalf":"Ithilien",
-         "Merry":"Ithilien",
-         "Pippin":"Ithilien"
+         "Theoden":"Ithilien (host passes out)",
+         "Aragorn":"Ithilien (host passes out)",
+         "Legolas":"Ithilien (host passes out)",
+         "Gimli":"Ithilien (host passes out)",
+         "Gandalf":"Ithilien (host passes out)",
+         "Merry":"Ithilien (host passes out)",
+         "Pippin":"Ithilien (host passes out)"
       }
    },
    "3019-03-24":{
