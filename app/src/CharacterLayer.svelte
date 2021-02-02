@@ -4,10 +4,14 @@
 		place: PlaceName
 	}
 	import * as d3 from "d3";
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
 	/*
 	TODOS: 
 	- add tooltip to dot´s showing Name: Location // Maybe switch to d3.js for svg drawing
 	// Move toolpip to outer component. Bubble Events? Pass Data (CharName?Color?Date?Location)
+	Detect overlapping dots circles and change the look of them accordingly
 	- hide controls and make them a bit nicer
 	- Display Event Text
 	- Add (Starting positions to characters?)
@@ -46,39 +50,50 @@
 		const tooltip = d3.select(".tooltip-area")
 		const rect = d3.select("#tooltip-rect")
 		// rect.attr("width",d => this.parentNode.childNodes[1].getComputedTextLength() + 20);
-		const mouseover = (event, d) => {
-				d3.select(event.target).transition().attr("r", selectedRadius)
+		
+		// const mouseover = (event, d) => {
+		// 		d3.select(event.target).transition().attr("r", selectedRadius)
 				
-				tooltip.style("opacity", 1);
-			};
+		// 		tooltip.style("opacity", 1);
+		// 	};
 			
-			const mouseleave = (event, d) => {
-			d3.select(event.target).transition().attr("r", radius)
-			tooltip.style('opacity', 0);
+		// 	const mouseleave = (event, d) => {
+		// 	d3.select(event.target).transition().attr("r", radius)
+		// 	tooltip.style('opacity', 0);
+		// }
+
+		// const mousemove = (event, d) => {
+		// 	const text = d3.select('.tooltip-area__text');
+		// 	text.text(`Name: ${data.place}`);
+		// 	const bbox = text.node().getBBox()
+		// 	const width =  bbox.width + 20
+		// 	const height = bbox.height + 10
+		// 	rect.attr("width",width )
+		// 		.attr("height", height)
+		// 	// text.attr("x", bbox.x + (width / 2))
+		// 	// 	.attr("y", bbox.y + ( height / 2))
+		// 	text.attr("x", width / 2)
+		// 		.attr("y", height / 2)
+		// 	// rect.attr("x", bbox.x)
+		// 	// rect.attr("y", bbox.y)
+
+		// 	console.log("BOX is ", bbox)
+		// 	const [x, y] = d3.pointer(event);
+		// 	const yTransform = y - height
+		// 	tooltip
+		// 		.attr('transform', `translate(${x}, ${yTransform})`);
+		// };
+		const genericEventData = {char: character, color: color, locData: data }
+		const mouseover = (event, d) => {
+			d3.select(event.target).transition().attr("r", selectedRadius)
+			dispatch("showTooltip", {mouseEvent: event, ...genericEventData })
 		}
-
-		const mousemove = (event, d) => {
-			const text = d3.select('.tooltip-area__text');
-			text.text(`Name: ${data.place}`);
-			const bbox = text.node().getBBox()
-			const width =  bbox.width + 20
-			const height = bbox.height + 10
-			rect.attr("width",width )
-				.attr("height", height)
-			// text.attr("x", bbox.x + (width / 2))
-			// 	.attr("y", bbox.y + ( height / 2))
-			text.attr("x", width / 2)
-				.attr("y", height / 2)
-			// rect.attr("x", bbox.x)
-			// rect.attr("y", bbox.y)
-
-			console.log("BOX is ", bbox)
-			const [x, y] = d3.pointer(event);
-			const yTransform = y - height
-			tooltip
-				.attr('transform', `translate(${x}, ${yTransform})`);
-		};
-
+			
+		const mouseleave = (event, d) => {
+			d3.select(event.target).transition().attr("r", radius)
+			dispatch("hideTooltip", {mouseEvent: event, ...genericEventData })
+		}
+		const mousemove = (event, d) => dispatch("moveTooltip", {mouseEvent: event, ...genericEventData })
 
 		d3Base.append("circle")
 			.style("fill", color)
@@ -87,10 +102,11 @@
 			.attr("cy", y)
 			.attr("data-place", data ? data.place ? data.place : "unknown" : "unknown")
 			.attr("data-char", character)
+			.attr("data-color", color)
 			.attr("data-date", data.date)
 			.on("mousemove", mousemove)
-			.on("mouseout", mouseleave)
-			.on("mouseenter", mouseover);
+			.on("mouseleave", mouseleave)
+			.on("mouseover", mouseover);
 
 }
 
@@ -129,6 +145,7 @@ function drawLineFromPlaces(place1: PlaceInTime, place2: PlaceInTime ) {
 
 
 function cleanDrawings() {
+	console.log("Clean Drawings for ", character)
 	Array.from(drawBase.childNodes).forEach(child => {
 		drawBase.removeChild(child)
 	});
