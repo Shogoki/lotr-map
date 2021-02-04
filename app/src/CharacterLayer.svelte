@@ -17,7 +17,7 @@
 	- Add (Starting positions to characters?)
 	- add smooth Paths
 	*/
-    import {getLocationSetByCharacter, getPlaceData, getPlaceLocation} from "./data"
+    import {getLocationSetByCharacter, getPlaceData, getPlaceLocation, getPathForCharacter} from "./data"
    import type {LocationSet, CharacterName, DateKey, PlaceLocation, PlaceName} from "./data"
  import { ShireDate } from "./data/util";
     export let character ="Frodo"
@@ -111,29 +111,43 @@
 }
 
 
-function drawLine(loc1: PlaceLocation, loc2: PlaceLocation, loc1Data: PlaceInTime, loc2Data: PlaceInTime, withDots=true) {
+function drawLine(loc1: PlaceLocation, loc2: PlaceLocation, loc1Data: PlaceInTime, loc2Data: PlaceInTime, withDots=true, intermediatePoints=[], lineType="confirmed") {
 
 	const d3Base = d3.select(drawBase)
-	d3Base.append("line")
+	const intermediateStr = intermediatePoints ? intermediatePoints.map(pt => `L${pt.x} ${pt.y}`).join(" "): ""
+	// if(intermediatePoints)
+	// {
+	// 	intermediatePoints.forEach(loc1 => drawCircle(loc1.x, loc1.y,loc1Data))
+	// }
+	const pathStr = `M${loc1.x} ${loc1.y} ${intermediateStr} L${loc2.x} ${loc2.y}`
+	d3Base.append("path")
 		.style("stroke", color)
-		.attr("x1", loc1.x)
-		.attr("x2", loc2.x)
-		.attr("y1", loc1.y)
-		.attr("y2", loc2.y)
+		.attr("d", pathStr)
+		.attr("fill", "none")
+		// .attr("x1", loc1.x)
+		// .attr("x2", loc2.x)
+		// .attr("y1", loc1.y)
+		// .attr("y2", loc2.y)
 		.attr("stroke-width", 3);
 		if(withDots){
 			drawCircle(loc1.x, loc1.y, loc1Data)
 			drawCircle(loc2.x, loc2.y, loc2Data)
 			
 		}
-		
+	
 }
 function drawLineFromPlaces(place1: PlaceInTime, place2: PlaceInTime ) {
 	// const promises = [getPlaceLocation(place1.place)]
 	// promises.push(getPlaceLocation(place2.place))
 	getPlaceLocation(place1.place).then(loc1 => {
 		getPlaceLocation(place2.place).then(loc2 => {
-			drawLine(loc1, loc2, place1, place2)
+			getPathForCharacter(place1.place, place2.place, character).then(pathData => {
+				if(pathData)
+					drawLine(loc1, loc2, place1, place2,true,pathData.points, pathData.routeType)
+				else
+					drawLine(loc1, loc2, place1, place2)
+
+			})
 		})
 	})
 	// Promise.all(promises).then(locations => {

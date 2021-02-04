@@ -1,5 +1,12 @@
 
 
+export interface PathData {
+    from: PlaceName
+    to: PlaceName
+    routeType: "confirmed"|"likely"|"speculative"|"unknown"
+    points: Array<PlaceLocation>
+    characters: Array<CharacterName>
+}
 export interface PlaceLocation {
     x: number;
     y: number;
@@ -60,6 +67,11 @@ export async function getCharacterNames(): Promise<string[]> {
     return Array.from(chars)
 }
 
+export async function getEventText(date: DateKey): Promise<string> {
+    const base = await getBaseData()
+    return base.dates.has(date) ?  base.dates.get(date).event : ""
+}
+
 export async function getLocationSetByCharacter(character: string) :Promise<LocationSet> {
     const base = await getBaseData()
     let ret: LocationSet = new Map()
@@ -92,4 +104,29 @@ export async function getPlaceLocation(place: PlaceName): Promise<PlaceLocation>
     console.log("Places:", data)
     console.log("Has:", data.has(place))
     return data.has(place) ?  data.get(place) : undefined
+}
+
+export async function getPathData(): Promise<Array<PathData>> {
+    const res = await fetch("/data/paths.json")
+    const obj = await res.json()
+    return obj.paths
+}
+
+export async function getPathForCharacter(loc1: PlaceName, loc2: PlaceName, character: CharacterName): Promise<PathData> {
+    const data = await getPathData()
+    let filtered = data.filter(item => item.from == loc1 && item.to === loc2)
+    if (filtered.length === 0) {
+        //REVERSE PATH
+        filtered = data.filter(item => item.from == loc2 && item.to === loc1).map( item => {return {...item, points: item.points.reverse()})
+    }
+    const res = filtered.filter(item => item.characters.includes(character))
+    if(res.length === 1)
+        return res[0]
+    else if (res.length === 0)
+        return null
+    else {
+        console.warn("DUPLICATE ROUTES FOUND! returning first")
+        return res[0]
+    }
+
 }
